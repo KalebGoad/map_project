@@ -1,0 +1,19 @@
+/* the below styling changed the background, for some reason, the .class selector isn't working at all for the map. styling for this compenent is in the HTML */
+
+
+/* mat-grid-tile { */
+    /* background-color: aliceblue; */
+    /* overflow: auto;
+} */
+
+/* mat-grid-tile::-webkit-scrollbar-track { */
+    /* background: hsl(120, 75%, 50%)
+} */
+
+/* ::-webkit-scrollbar-thumb {
+    background: hsl(120, 100%, 20);
+}  These webkits aren't working.  */
+
+/* div.world-map-container { */
+    /* overflow: auto;  The div.world-map-container, or just .world-map-container do not work for selecting and styling*/
+/* } */

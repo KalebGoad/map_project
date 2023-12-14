@@ -1,0 +1,33 @@
+
+
+<mat-grid-list cols="3" rowHeight="4:5">
+    <mat-grid-tile
+        [colspan]="2"
+        [rowspan]="2"
+        >
+        <!-- The below format on HTML inline is needed with this component for styling the map -->
+        <div id="world-map-container" style="
+        margin: 0; 
+        border: 4px solid black;
+        border-radius: 400px;
+        overflow: auto;
+        box-shadow: -20px 10px 10px rgba(4, 4, 4, 0.483);
+        background-color:  blue; 
+        width: 80%; 
+        max-width: 1000px;
+        height: 75%;
+        padding: 20px;
+        max-height: 600px;
+        "
+        >
+            <app-world-map (grabCountryID)="grabID($event)"></app-world-map>
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile
+        [colspan]="1"
+        [rowspan]="2">
+        <div style="width: 100%; height: 100%; margin: 20px">
+            <app-country-details [id]="id"></app-country-details>
+        </div>
+    </mat-grid-tile>
+</mat-grid-list>
