@@ -1,33 +1,25 @@
-
-
-<mat-grid-list cols="3" rowHeight="4:5">
-    <mat-grid-tile
-        [colspan]="2"
-        [rowspan]="2"
-        >
-        <!-- The below format on HTML inline is needed with this component for styling the map -->
-        <div id="world-map-container" style="
-        margin: 0; 
-        border: 4px solid black;
-        border-radius: 400px;
-        overflow: auto;
-        box-shadow: -20px 10px 10px rgba(4, 4, 4, 0.483);
-        background-color:  blue; 
-        width: 80%; 
-        max-width: 1000px;
-        height: 75%;
-        padding: 20px;
-        max-height: 600px;
-        "
-        >
-            <app-world-map (grabCountryID)="grabID($event)"></app-world-map>
+<!-- Notes for below similarities to my Vanilla blueprint: 
+    world-map-container = svg_content   Will apply those setting here. the difference being an extra div inside to bring in country id. 
+    potential issue if doesn't work, the former mat-grid-list..See if the SVG components really on that, change to what's needed to work here.
+    We'll have to change some stuff in input form to bring in info from API. Likely do this in the country-details component.
+-->
+<div class="container">
+    <div class="map">
+        <div class="map-header">
+            <p class="click-globe">Scroll the globe and click a country to display it's information</p>
         </div>
-    </mat-grid-tile>
-    <mat-grid-tile
-        [colspan]="1"
-        [rowspan]="2">
-        <div style="width: 100%; height: 100%; margin: 20px">
-            <app-country-details [id]="id"></app-country-details>
+        <div class="world-map-container">
+            <app-world-map (grabCountryID)="grabID($event)" class="SVG_import"></app-world-map>
         </div>
-    </mat-grid-tile>
-</mat-grid-list>
+    </div>
+
+    <div class="data">
+        <div class="data-header">
+            <p class="search">Search by Country Name</p>
+                <input type="text" id="search-field" placeholder="Type Country Name">
+        </div>
+        <div class="country-data">
+            <app-country-details [id]="id" class="DATA_import"></app-country-details>
+        </div>
+    </div>
+</div>

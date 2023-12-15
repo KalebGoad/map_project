@@ -1,19 +1,251 @@
 /* the below styling changed the background, for some reason, the .class selector isn't working at all for the map. styling for this compenent is in the HTML */
 
+/* Below is the former styling used with inline css. */
+
+/* margin: 0; 
+border: 4px solid black;
+border-radius: 400px;
+overflow: auto;
+box-shadow: -20px 10px 10px rgba(4, 4, 4, 0.483);
+background-color:  blue; 
+width: 80%; 
+max-width: 1000px;
+height: 75%;
+padding: 20px;
+max-height: 600px; */
+
 
 /* mat-grid-tile { */
     /* background-color: aliceblue; */
     /* overflow: auto;
 } */
 
-/* mat-grid-tile::-webkit-scrollbar-track { */
-    /* background: hsl(120, 75%, 50%)
-} */
+/* ::-webkit-scrollbar-track { 
+    background: hsl(120, 75%, 50%)
+}
 
-/* ::-webkit-scrollbar-thumb {
+ ::-webkit-scrollbar-thumb {
     background: hsl(120, 100%, 20);
-}  These webkits aren't working.  */
+}   These still aren't working AS Global Styles at least.
+Check these styles by applying them to world-map component.*/
 
-/* div.world-map-container { */
-    /* overflow: auto;  The div.world-map-container, or just .world-map-container do not work for selecting and styling*/
-/* } */
+
+
+
+.container {
+    display: flex;
+}
+
+/* Start of the Map Component */
+.map {
+    width: 75vw;
+    height: 100vh;
+    border: 4px solid black;
+}
+
+    .map-header {
+        display: flex;
+        background-color: aliceblue;
+        margin: auto;
+        margin-top: 30px;
+        height: auto;
+        align-items: center;
+        width: fit-content;
+        border: 4px outset rgb(244, 5, 5);
+        border-radius: 8px;
+        box-shadow: -20px 10px 10px rgba(4, 4, 4, 0.246);
+    }
+
+        .click-globe {
+            display: block;
+            margin: auto;
+            font-size: 30px;
+            padding: 10px;
+            left: 50%;
+            align-items: center;
+        }
+
+            .world-map-container {
+                margin: auto;
+                margin-top: 20%;
+                align-items: center;
+                overflow: auto;
+                height: 400px;
+                width: 65%;
+                background-color:  blue; 
+                border: 8px solid rgb(6, 6, 6);
+                border-radius: 400px;
+                box-shadow: -20px 10px 10px rgba(4, 4, 4, 0.483);
+            }
+
+                .SVG_import {
+                    /* placeholder in case styling is applied here, if this doesn't fix the SVG behavior, move on. */
+                }
+
+ /* Start of Data Component */
+
+.data {
+    width: 35vw;
+    height: 100vh;
+    align-content: stretch;
+    background-color: rgb(237, 128, 128);
+    border: 6px solid black;
+}
+
+    .data-header {
+        margin: auto;
+        margin-top: 30px;
+        align-items: center;
+        background-color: black;
+        height: auto;
+        max-width: fit-content;
+        border: 6px outset rgb(10, 10, 10);
+        border-radius: 8px;
+    }
+
+        .search {
+            padding: 10px;
+            margin: auto;
+            margin-left: 10px;
+            font-size: 20px;
+            color:aliceblue;
+        }
+            #search-field {
+                margin: auto;
+                margin-left: 30px;
+                border: 6px solid rgba(3, 247, 3, 0.862);
+                border-radius: 10px;
+            }
+
+                .country-data {
+                    margin: auto;
+                    margin-top: 30px;
+                    align-items: center;
+                    align-content: stretch;
+                    height: auto;
+                    max-width: fit-content;
+                    background-color: rgb(252, 252, 252);
+                    border: 10px inset rgb(10, 10, 10);
+                    border-radius: 16px;
+                    box-shadow: 0px 20px 10px rgba(76, 73, 73, 0.246);
+                }
+
+                    .output-text {
+                        /* This is a placeholder for extra text customizing. */
+                    }
+/* Media Queries for increasing SVG World map: use Min-width */
+
+@media (min-width: 1100px) {
+    .world-map-container {
+        margin-top: 15%;
+        height: 500px;
+    }
+}
+    
+
+@media (min-width: 1350px) {
+    .world-map-container {
+        margin-top: 10%;
+        height: 600px;
+    }
+}
+
+@media (min-width: 1550px) {
+    .world-map-container {
+        margin-top: 8%;
+        height: 700px;
+    }
+}
+
+@media (min-width: 2000px) {
+    .world-map-container {
+        margin-top: 6%;
+        height: 800px;
+    }
+}
+
+@media (min-width: 2350px) {
+    .world-map-container {
+        margin-top: 5%;
+        height: 900px;
+        border-radius: 700px;
+    }
+}
+
+@media (min-width: 2455px) {
+    .world-map-container {
+        margin-top: 5%;
+        height: 1000px;
+        border-radius: 800px;
+    }
+}
+
+@media (min-width: 2900px) {
+    .world-map-container {
+        margin-top: 5%;
+        height: 1100px;
+        border-radius: 900px;
+    }
+}
+
+
+/* Beginning of page break to mobile devices: Use Max-width*/
+
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .map {
+        width: 100vw;
+        height: 70vh;
+    }
+
+        .map-header {
+        height: 100px;
+        max-width: fit-content;
+        }
+
+            .click-globe {  
+                margin: auto;
+                padding: 2px;
+                font-size: 24px;
+            } 
+                .world-map-container {
+                    margin-top: 30px;
+                    height: 400px;
+                }  
+
+    .data {
+        width: 100vw;
+        height: fit-content;
+        align-content: stretch;
+    }
+
+        .data-header {
+
+        }
+
+            .search {
+
+            }
+
+                .country-data {
+
+                }
+    
+}
+
+
+/* Media Queries for adjusting SVG world map to small devices. In order to match the world scaling portion, we will have to find a way to adjust the SVG viewport and viewBox in accordance. Sizing up the Viewbox part will make the countries much smaller, and therefore, the search function more necessary. */
+@media (max-width: 530px) {
+    .world-map-container {
+        height: 300px;
+    }
+} 
+ 
+@media (max-width: 400px) {
+    .world-map-container {
+        height: 220px;
+    }
+}
