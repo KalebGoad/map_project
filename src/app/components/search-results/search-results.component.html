@@ -1,0 +1,16 @@
+<div class= "search-results">
+    <div>
+        <input type="text" [{ngModule}]="enteredSearchValue" (input)="onSearchTextChanged"> 
+        <div class="search-title">Search Results</div>
+        <div>Country: {{country.name}}</div>
+        <div>Capital: {{country.capitalCity}}</div>
+    </div>
+        <div>
+            <p>Latitude: {{country.latitude}}</p>
+        </div>
+        <div>
+            <p>Longitude: {{country.longitude}}</p>
+        </div>
+</div>
+
+<!-- Tonight, implement a search results tab that pulls from info our of the country details not shown here. Just need to set up search component from click to  -->

@@ -88,7 +88,7 @@ Check these styles by applying them to world-map component.*/
     width: 35vw;
     height: 100vh;
     align-content: stretch;
-    background-color: rgb(237, 128, 128);
+    background-color: rgba(244, 205, 7, 0.306);
     border: 6px solid black;
 }
 

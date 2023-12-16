@@ -1,0 +1,24 @@
+/* Adjusting these styles work, just mirror what exists in Home and adjust both until satisfied. */
+mat-card {
+    margin: 0; 
+    top: 25%;
+    width: 100%;
+    height: min-content; 
+    border: 6px solid black;
+    border-radius: 30px;
+    box-shadow: 20px 10px 10px rgba(4, 4, 4, 0.483);
+
+    background-color: rgb(99, 159, 172);
+}
+mat-card-title {
+    font-size: 30px;
+}
+
+mat-card-subtitle {
+    font-size: 24px;
+}
+
+mat-card-content {
+    font-size: 24px;
+    padding: 10px;
+}

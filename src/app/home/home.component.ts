@@ -14,6 +14,13 @@ export class HomeComponent implements OnInit{
     this.id = ''
 
   }
+  searchText: string = ' ';
+
+  onSearchTextEntered(searchValue: string) {
+		this.searchText = searchValue;
+		console.log(this.searchText);
+	}
+
 
   ngOnInit(): void {
     // throw new Error('Method not implemented.');
