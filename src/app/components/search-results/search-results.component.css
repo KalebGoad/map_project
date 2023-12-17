@@ -1,24 +1,40 @@
 /* Adjusting these styles work, just mirror what exists in Home and adjust both until satisfied. */
-mat-card {
-    margin: 0; 
+.search-results {
+    display: block;
+    margin: 4px; 
+    align-items: center;
     top: 25%;
     width: 100%;
     height: min-content; 
-    border: 6px solid black;
+    border: 6px solid rgb(238, 137, 13);
     border-radius: 30px;
-    box-shadow: 20px 10px 10px rgba(4, 4, 4, 0.483);
-
-    background-color: rgb(99, 159, 172);
-}
-mat-card-title {
-    font-size: 30px;
+    background-color: rgb(25, 201, 169);
 }
 
-mat-card-subtitle {
+#search-input {
+    margin: 6px;
+    font-size: 16px;
+    margin-left: 20px;
+    border: 2px solid black;
+}
+.search-title {
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.country {
+    margin:12px;
     font-size: 24px;
 }
 
-mat-card-content {
+.cap {
+    margin:12px;
     font-size: 24px;
-    padding: 10px;
+    color:aliceblue;
+}
+
+p {
+    font-size: 20px;
+    margin-top: 2px;
+    margin-left: 4px;
 }

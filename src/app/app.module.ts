@@ -11,12 +11,15 @@ import { MatCardModule } from '@angular/material/card'
 import { HomeComponent } from './home/home.component';
 import { WorldMapComponent } from './components/world-map/world-map.component';
 import { CountryDetailsComponent } from './components/country-details/country-details.component';
+import { SearchDetailsComponent } from './components/search-results/search-results.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     WorldMapComponent,
     CountryDetailsComponent,
+    SearchDetailsComponent,
   ],
   imports: [
     BrowserModule,

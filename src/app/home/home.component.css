@@ -1,36 +1,3 @@
-/* the below styling changed the background, for some reason, the .class selector isn't working at all for the map. styling for this compenent is in the HTML */
-
-/* Below is the former styling used with inline css. */
-
-/* margin: 0; 
-border: 4px solid black;
-border-radius: 400px;
-overflow: auto;
-box-shadow: -20px 10px 10px rgba(4, 4, 4, 0.483);
-background-color:  blue; 
-width: 80%; 
-max-width: 1000px;
-height: 75%;
-padding: 20px;
-max-height: 600px; */
-
-
-/* mat-grid-tile { */
-    /* background-color: aliceblue; */
-    /* overflow: auto;
-} */
-
-/* ::-webkit-scrollbar-track { 
-    background: hsl(120, 75%, 50%)
-}
-
- ::-webkit-scrollbar-thumb {
-    background: hsl(120, 100%, 20);
-}   These still aren't working AS Global Styles at least.
-Check these styles by applying them to world-map component.*/
-
-
-
 
 .container {
     display: flex;
@@ -48,7 +15,8 @@ Check these styles by applying them to world-map component.*/
         background-color: aliceblue;
         margin: auto;
         margin-top: 30px;
-        height: auto;
+        padding: 4px;
+        height: fit-content;
         align-items: center;
         width: fit-content;
         border: 4px outset rgb(244, 5, 5);
@@ -57,9 +25,14 @@ Check these styles by applying them to world-map component.*/
     }
 
         .click-globe {
-            display: block;
-            margin: auto;
-            font-size: 30px;
+            display: inline-block;
+            margin: 8px;
+            margin-top: 4px;
+            padding-top: 24px;
+            font-size: 50px;
+            font-weight: bold;
+            font: space-between;
+            line-height: 45px;
             padding: 10px;
             left: 50%;
             align-items: center;
@@ -140,6 +113,9 @@ Check these styles by applying them to world-map component.*/
         margin-top: 15%;
         height: 500px;
     }
+    .click-globe {
+        font-size: 50px;
+    }
 }
     
 
@@ -148,6 +124,9 @@ Check these styles by applying them to world-map component.*/
         margin-top: 10%;
         height: 600px;
     }
+    .click-globe {
+        font-size: 50px;
+    }
 }
 
 @media (min-width: 1550px) {
@@ -155,12 +134,18 @@ Check these styles by applying them to world-map component.*/
         margin-top: 8%;
         height: 700px;
     }
+    .click-globe {
+        font-size: 50px;
+    }
 }
 
 @media (min-width: 2000px) {
     .world-map-container {
         margin-top: 6%;
         height: 800px;
+    }
+    .click-globe {
+        font-size: 50px;
     }
 }
 
@@ -170,6 +155,9 @@ Check these styles by applying them to world-map component.*/
         height: 900px;
         border-radius: 700px;
     }
+    .click-globe {
+            font-size: 50px;
+    }
 }
 
 @media (min-width: 2455px) {
@@ -177,6 +165,9 @@ Check these styles by applying them to world-map component.*/
         margin-top: 5%;
         height: 1000px;
         border-radius: 800px;
+    }
+    .click-globe {
+        font-size: 50px;
     }
 }
 
@@ -186,6 +177,9 @@ Check these styles by applying them to world-map component.*/
         height: 1100px;
         border-radius: 900px;
     }
+.click-globe {
+    font-size: 50px;
+}
 }
 
 
@@ -207,9 +201,8 @@ Check these styles by applying them to world-map component.*/
         }
 
             .click-globe {  
-                margin: auto;
                 padding: 2px;
-                font-size: 24px;
+                font-size: 30px;
             } 
                 .world-map-container {
                     margin-top: 30px;
@@ -242,6 +235,11 @@ Check these styles by applying them to world-map component.*/
     .world-map-container {
         height: 300px;
     }
+    .click-globe {  
+        padding: 2px;
+        font-size: 18px;
+    } 
+
 } 
  
 @media (max-width: 400px) {

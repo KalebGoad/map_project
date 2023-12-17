@@ -9,7 +9,7 @@
             <p class="click-globe">Scroll the globe and click a country to display it's information</p>
         </div>
         <div class="world-map-container">
-            <app-world-map (grabCountryID)="grabID($event)" class="SVG_import"></app-world-map>
+            <app-world-map (grabCountryID)="getID($event)" class="SVG_import"></app-world-map>
         </div>
     </div>
 
@@ -17,21 +17,11 @@
         <ng-container></ng-container>
         <div class="data-header">
             <p class="search">Search by Country Name</p>
-                <input type="text" id="search-field" placeholder="Type Country Name" [(ngModel)]="enteredSearchValue" (input)="onSearchTextChanged()">
+                <app-search-details (searchText)="getSearch($event)" [country]="country"></app-search-details>
         </div>
         
         <div class="country-data">
             <app-country-details [id]="id" class="DATA_import"></app-country-details>
         </div>
-        <!-- RIch Fix it area. This method is what I'm trying to contain. 
-            I assume let country of countries is the right use. 
-            I also think as I'm doing my project, that this For and If ng containers will go in my Searchcomponent, or maybe I bring the search component here instead with the country details.
-
-        -->
-        <ng-container *ngFor="let country of countries">
-            <div class="search-data" *ngIf="searchText === '' || country.name.toLowerCase().includes(searchText) ">
-                <app-search-details (searchTextChanged)="onSearchTextEntered($event)"></app-search-details>
-            </div>
-        </ng-container>
     </div>
 </div>

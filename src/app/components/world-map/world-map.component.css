@@ -1,23 +1,10 @@
 
 g:hover path, path:hover {
     fill: rgb(246, 5, 146);
-    stroke: red;
+    stroke: rgb(11, 11, 11);
     stroke-width: 1px;
     transition: fill 0.2s;
 }
 
-/* Next objective here is to learn how to customize the overflow. Webkits below don't work.
-trying first in the home component, as that is where the overflow, but try here as well since the above styling does affect the map well.
-
-Find tutorials on making the 
-*/
-
-/* ::-webkit-scrollbar-track { 
-    background: hsl(120, 75%, 50%)
-}
-
- ::-webkit-scrollbar-thumb {
-    background: hsl(120, 100%, 20);
-}  */
 
 
