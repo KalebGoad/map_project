@@ -65,11 +65,11 @@ export class CountryDetailsComponent implements OnChanges{
           });
           this.apiService.GetTotalPop(changes['id'].currentValue)
           .subscribe((response: any) => {
-            this.country.totalPop = response[1][0].value;
+            this.country.totalPop = response[1][0].value.toLocaleString();
           });
           this.apiService.GetGDP(changes['id'].currentValue)
           .subscribe((response: any) => {
-            this.country.gdp = response[1][0].value;
+            this.country.gdp = response[1][0].value.toLocaleString();
           });
         }
       }

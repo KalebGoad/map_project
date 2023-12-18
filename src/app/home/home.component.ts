@@ -116,7 +116,7 @@ export class HomeComponent implements OnInit {
         ids.push(x.id);
         this.sList.push(x.name);
       }
-      console.log(ids);
+      console.log(ids.toLocaleString());
       console.log(this.sList);
     });
     if(ids.length == 1) {
