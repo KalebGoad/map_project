@@ -1,4 +1,4 @@
-/* Adjusting these styles work, just mirror what exists in Home and adjust both until satisfied. */
+
 .search-results {
     display: block;
     margin: 4px; 
@@ -45,5 +45,15 @@ p {
     }
     .search-title {
         margin-left: 60px;
+    }
+}
+
+@media (min-width: 900px) {
+   
+    #search-input {
+        margin-left: 25px;
+    }
+    .search-title {
+        margin-left: 40px;
     }
 }

@@ -7,7 +7,7 @@ import { APIService } from 'src/app/services/api/api.service';
   templateUrl: './country-details.component.html',
   styleUrls: ['./country-details.component.css']
 })
-
+// Might use this function in the future, but general styling works just using toLocaleString for now.
 // export function formatGdp(cents) {
 //   return (cents / 100).toLocaleString("en-US", {
 //     style: "currency",

@@ -230,7 +230,7 @@
 }
 
 
-/* Media Queries for adjusting SVG world map to small devices. In order to match the world scaling portion, we will have to find a way to adjust the SVG viewport and viewBox in accordance. Sizing up the Viewbox part will make the countries much smaller, and therefore, the search function more necessary. */
+/* Media Queries for adjusting SVG world map to small devices. In order to match the world scaling portion, we will have to find a way to adjust the SVG viewport and viewBox. Sizing up the Viewbox part will make the countries much smaller, and therefore, the search function more necessary to use on click. */
 @media (max-width: 530px) {
     .world-map-container {
         height: 300px;

@@ -63,7 +63,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
       let newCountry: CSearch;
-// The api doesn't allow a query by name, so the GetAllCountries() 
+// The api doesn't allow a query by name, so the GetAllCountries() workaround is applied here. 
       this.apiService.GetAllCountries()
       .subscribe((response: any) => {
         response[1].forEach((element: any) => {
