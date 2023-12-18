@@ -80,7 +80,7 @@
             padding: 10px;
             margin: auto;
             margin-left: 10px;
-            font-size: 20px;
+            font-size: 24px;
             color:aliceblue;
         }
             #search-field {
@@ -237,7 +237,7 @@
     }
     .click-globe {  
         padding: 2px;
-        font-size: 18px;
+        font-size: 24px;
     } 
 
 } 
@@ -246,4 +246,5 @@
     .world-map-container {
         height: 220px;
     }
+
 }

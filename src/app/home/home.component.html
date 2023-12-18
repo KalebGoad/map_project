@@ -6,7 +6,7 @@
 <div class="container">
     <div class="map">
         <div class="map-header">
-            <p class="click-globe">Scroll the globe and click a country to display it's information</p>
+            <p class="click-globe">Scroll the globe and click a country or search by name.</p>
         </div>
         <div class="world-map-container">
             <app-world-map (grabCountryID)="getID($event)" class="SVG_import"></app-world-map>
@@ -14,7 +14,6 @@
     </div>
 
     <div class="data">
-        <ng-container></ng-container>
         <div class="data-header">
             <p class="search">Search by Country Name</p>
                 <app-search-details (searchText)="getSearch($event)" [country]="country"></app-search-details>
